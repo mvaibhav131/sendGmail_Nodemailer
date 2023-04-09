@@ -1,11 +1,11 @@
 
 const router= require('express').Router();
 
-const { signup, getbill } = require('../controller/appController');
+const { email, gmail } = require('../controller/appController');
 
 
  
-router.post('/user/signup',signup);
-router.post('/product/getbill',getbill);
+router.post('/user/email',email);
+router.post('/user/gmail',gmail);
 
 module.exports=router;
