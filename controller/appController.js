@@ -2,7 +2,7 @@ const nodemailer = require('nodemailer'); // for email
 const Mailgen=require('mailgen'); // for gmail
 require('dotenv').config();
 
-const signup=async(req,res)=> {
+const email=async(req,res)=> {
     /** send mail from ethereal email account & nodemailer */
     let testAccount = await nodemailer.createTestAccount();
 
@@ -38,7 +38,7 @@ const signup=async(req,res)=> {
 
 
 
-const getbill=(req,res)=>{
+const gmail=(req,res)=>{
     /**Send real Gmail using nodemailer & mailgen */
 
     const {userEmail}= req.body; // here you need to enter the email for receiver
@@ -98,4 +98,4 @@ const getbill=(req,res)=>{
     // res.status(201).json("Getbill Successfully.... ! ")
 }
 
-module.exports={signup,getbill}
+module.exports={email,gmail}
