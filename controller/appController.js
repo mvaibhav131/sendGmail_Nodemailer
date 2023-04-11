@@ -69,9 +69,9 @@ const gmail=(req,res)=>{
             table:{
                 data:[
                    {
-                     item:"NOdemailer through gmail",
+                     item:"N0demailer through gmail",
                     description:"A gmail application",
-                    price:"555Rupees"
+                    price:"123 Rupees"
                 }
                 ]
             },
