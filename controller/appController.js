@@ -77,7 +77,7 @@ const gmail=(req,res)=>{
             },
             outro:"Looking the forword !"
         }
-    }
+    };
 
     let mail= mailGenerator.generate(response)
     let message= {
@@ -85,7 +85,7 @@ const gmail=(req,res)=>{
         to:userEmail,
         subject:"Your mail through mailgen",
         html:mail
-    }
+    };
 
     transporter.sendMail(message).then((data)=>{
        return res.status(201).json({
@@ -93,9 +93,8 @@ const gmail=(req,res)=>{
         })
       }).catch(error=>{
         res.status(500).json({message:error})
-      })
-
+      });
     // res.status(201).json("Getbill Successfully.... ! ")
-}
+};
 
 module.exports={email,gmail};
