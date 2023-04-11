@@ -50,7 +50,7 @@ const gmail=(req,res)=>{
             user:process.env.GMAIL,
             pass:process.env.PASSWORD
         }
-    }
+    };
 
     let transporter=nodemailer.createTransport(config);
 
