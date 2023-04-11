@@ -52,7 +52,7 @@ const gmail=(req,res)=>{
         }
     }
 
-    let transporter=nodemailer.createTransport(config)
+    let transporter=nodemailer.createTransport(config);
 
     let mailGenerator = new Mailgen({
         theme:"default",
