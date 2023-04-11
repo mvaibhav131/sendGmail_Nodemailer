@@ -98,4 +98,4 @@ const gmail=(req,res)=>{
     // res.status(201).json("Getbill Successfully.... ! ")
 }
 
-module.exports={email,gmail}
+module.exports={email,gmail};
